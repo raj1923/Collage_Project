@@ -1,0 +1,15 @@
+
+<div class="bg">
+  <div class="login">
+  <h1>Create Account</h1>
+  <form [formGroup]=" createaccount" (ngsubmit)="sigup()">
+    <p><input formControlName="name" type="text" name="username" ng-model="name" value="" placeholder="Username" required></p>
+    <p><input formControlName="password" type="password" name="password" ng-model="password" value=""
+        placeholder="Password" required></p>
+    
+    <input type="button" (click)="sigup()" [disabled]="!createaccount.valid"value="submit">
+  </form>
+  </div>
+</div>
+
+

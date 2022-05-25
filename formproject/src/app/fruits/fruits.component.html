@@ -1,0 +1,85 @@
+                     
+ <head>                      
+  <title>Page Title</title>               
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>            
+ </head>                                                                                           
+<div class="jumbotron"id="a">
+ <div class="container">
+     
+ <h1 align="center" ><strong>SUPER MARKET</strong></h1>
+ </div>
+</div>
+<div style="background-color: rgb(86, 194, 194);">
+     <div class="row">
+          <div class="col-md-1">
+                 <input type="button"value="Home" routerLink="/home">
+          </div>
+          <div class="col-md-1">
+             <input type="button"value="Fruits"routerLink="/fruits">
+          </div>
+          <div class="col-md-1">
+              <input type="button"value="Vegatables"routerLink="/vegatables">
+          </div>
+    
+        <div class=" search col-md-8">
+                  <input type="text" style="float:right;"class="textfil"[(ngModel)]="data" placeholder="Search Fruits">
+        </div>
+        <div class="  col-xl-1">
+                  <i class="fa fa-shopping-cart" style="font-size:30px;color:red" routerLink="/cart"></i>
+                
+        </div>
+     </div>
+</div>
+
+    <h1 style="padding-left:20px;">Patience is bitter, but its fruit is sweet</h1>
+    
+    <div class="container row"> 
+      <div class="_ngcontent col-md-6">
+        <div _ngcontent-c3 sm-2 class="card">
+            <div class="row">
+                 
+                <div class="col-md-6" *ngFor="let f1 of fruits1 | filter: data">
+                    <img [src]="f1.img" width="200px"height="200px" style="padding:5px"> 
+                   <p> <strong> {{f1.Name}}</strong>
+                      <strong>{{f1.weight}}</strong>
+                      <strong>{{f1.rate}}Rs</strong>
+                     
+                      <input type="button" value="ADD" (click)="addfn(f1)" ></p>
+                </div>
+             </div>
+         </div>
+      </div>
+
+
+
+      <div class="_ngcontent col-md-6">
+        <div class="container mt-3">
+          <h2 style=" background-color:tan">YOUR CART</h2>           
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let f of addarr">
+                <td>{{f.Name}}</td>
+                <td>{{f.rate}}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>{{total}}</strong></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      
+
+      </div>
+    </div>
+
+<router-outlet ></router-outlet>
+

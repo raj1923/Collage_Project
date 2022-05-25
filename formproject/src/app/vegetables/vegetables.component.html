@@ -1,0 +1,82 @@
+<!DOCTYPE html>           
+<html>                      
+ <head>                      
+  <title>Page Title</title>               
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>            
+ </head>                 
+ <body>                                                                           
+<div class="jumbotron"id="a">
+ <div class="container-md-flude">
+     
+ <h1 align="center" ><strong>SUPER MARKET</strong></h1>
+ 
+ </div>
+</div>
+<div style="background-color: rgb(86, 194, 194);">
+  <div class="row">
+       <div class="col-md-1">
+              <input type="button"value="Home" routerLink="/home">
+       </div>
+       <div class="col-md-1">
+          <input type="button"value="Fruits"routerLink="/fruits">
+       </div>
+       <div class="col-md-1">
+           <input type="button"value="Vegatables"routerLink="/vegatables">
+       </div>
+ 
+     <div class=" search col-md-8">
+               <input type="text" style="float:right;"class="textfil"[(ngModel)]="vegdata" placeholder="Search vegatables">
+     </div>
+     <div class="  col-xl-1">
+               <i class="fa fa-shopping-cart" style="font-size:30px;color:red" routerLink="/cart"></i>
+             
+     </div>
+  </div>
+</div>
+<h1 style="padding-left: 20px;">I like to pick my own vegetables.</h1>
+<div class="container row"> 
+  <div class="_ngcontent col-md-6">
+    <div _ngcontent-c3 sm-2 class="card">
+        <div class="row">
+
+            <div class="col-md-6" *ngFor="let v1 of veg1 | filter:vegdata">
+                <img [src]="v1.img" width="150px"height="150px" style="padding:5px"> 
+               <p>  <strong>{{v1.Name}}</strong>
+                <strong>{{v1.weight}}</strong>
+                <strong>{{v1.rate}}Rs</strong></p>
+                 
+                  <input type="button" value="ADD" (click)="addveg(v1)" >
+            </div>
+         </div>
+     </div>
+  </div>
+
+
+
+  <div class="_ngcontent col-md-6">
+    <div class="container mt-3">
+      <h2 style=" background-color:tan">YOUR CART</h2>           
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let v of addarry">
+            <td>{{v.Name}}</td>
+            <td>{{v.rate}}</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td><strong>Total</strong></td>
+          <td>  <strong>{{total}}</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>
+<router-outlet  ></router-outlet>

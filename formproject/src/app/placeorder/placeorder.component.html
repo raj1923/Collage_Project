@@ -1,0 +1,127 @@
+<!DOCTYPE html>           
+<html>                      
+ <head>                      
+  <title>Page Title</title>               
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>            
+ </head>                 
+ <body>                                                                           
+<div class="jumbotron"id="a">
+ <div class="container">
+     
+ <h1 align="center" ><strong>SUPER MARKET</strong></h1>
+ </div>
+</div>
+<div class="nav">
+ <ul>
+  <ul>
+    <li><input type="button"value="Home" routerLink="/home"></li>
+    <li><input type="button"value="Fruits"routerLink="/fruits"></li>
+    <li><input type="button"value="Vegatables"routerLink="/vegatables"></li>
+    <li style="float:right"> <i class="fa fa-shopping-cart" style="font-size:30px;color:red" routerLink="/cart"></i></li>
+ </ul>
+ </ul>
+</div>
+
+<div class='container mt-3'>
+    <div _ngcontent-c3 sm-2 class="card" style="width:fit-content">
+        <h5 _ngcontent-c3 class="card header bg-info bg-light">Enter Details</h5>
+
+    <div class="row">
+    <div class="col-sm-8">
+        <div class="row sm-6">
+            <div class="col-sm-6">
+        <label for="FullName"><strong>FullName:</strong></label></div>
+      
+      
+    <input class="input-lg" type="text"placeholder="Name"name="fullname"size="50%"[(ngModel)]="fullname"id="f" required> 
+        </div>
+        </div>
+        </div>
+
+
+        <div class="row">
+    <div class="col-sm-8">
+        <div class="row sm-6">
+            <div class="col-sm-5">
+        <label for="Email"><strong>Email:</strong></label></div>
+        <input type="text" style="background-color:white;"placeholder="email"name="email"id="e" [(ngModel)]="email" required>
+    </div>
+    </div>
+    </div>
+   
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="row sm-6">
+                <div class="col-sm-5">
+            <label for="State"><strong>State:</strong></label></div>
+            <input type="text"placeholder="State"ng-model="state"name="sta" [(ngModel)]="state"id="s">
+    </div>
+        </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="row sm-6">
+                    <div class="col-sm-5">
+                <label for="District"><strong>District</strong> </label></div>
+            <input type="text"placeholder="District"name="dit"[(ngModel)]="district"id="d" required> 
+                </div>
+                </div>
+                </div>
+    
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="row sm-6">
+                <div class="col sm-5">
+            <label for="Mandal"> <strong>Mandal: </strong></label></div>
+            <input type="text" placeholder="Mandal"name="mun" [(ngModel)]="mandal" id="m">
+        </div>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="row sm-6">
+                <div class="col sm-5">
+            <label for="Village"><strong> Village:</strong></label></div>
+            <input type="text" placeholder="D.no,Street,Village"name="vill" [(ngModel)]="village">
+        </div>
+    </div>
+    </div>
+
+    <div class="row" id="f1">
+        <div class="col-sm-8">
+            <div class="row sm-6">
+                <div class="col sm-5">
+            <label for="Phone"> <strong>Phone:</strong></label></div>
+            <input type="number" placeholder="Phone" name="pho"[(ngModel)]="phone" >
+        </div>
+        </div>
+        </div>
+
+        <div class="row" id="f1">
+        <div class="col-sm-8">
+            <div class="row sm-6">
+                <div class="col sm-5"> 
+                <label for="Pincode"> <strong>Pincode </strong></label></div>
+            <input type="number" placeholder="Zip" name="pin" [(ngModel)]="pincode" id="c">
+        </div>
+        </div>
+        </div>
+
+    <br>
+    <br>
+    <div class="row sm-6">
+    <button type="submit"  class="btn btn-success"(click)="place()">Check Out</button>
+    </div>
+
+   
+  
+</div>
+</div>
+</body>
+</html>
+    
+
+
+

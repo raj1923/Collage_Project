@@ -1,0 +1,32 @@
+<div class="head">
+<div class="login">
+    <div>
+    <h1>Login to Web App</h1>
+    </div>
+    <div class="loginform">
+       <form [formGroup]="loginform"(ngSubmit)="login()">
+          <p><input type="text"formControlName='name' name="login" ng-model="name" value="" placeholder="Username or Email"></p>
+          <p><input type="password"formControlName='password' name="password"ng-model="password" value="" placeholder="Password"></p>
+          <p class="remember_me">
+           <label>
+              <input type="checkbox" name="remember_me" id="remember_me">
+                  Remember me on this computer
+                </label>
+            </p>
+      
+            <p class="submit"> <button type="submit" value="submit" style="background-color:#7dc9e2"  class="rounded-pill"><strong>Login</strong></button></p>
+    
+        </form>
+
+    </div>
+  
+        <div class="login-help"style="font-family:'Times New Roman', Times, serif">
+          <p >Forgot Your Password? <input type="button"name="reset" routerLink="createaccount"value="Click here to reset it."></p>
+          
+            <p>New User ?<input type="button" name="create" routerLink="createaccount" value="Create Account"></p>
+            
+        </div>
+</div>
+</div>
+
+  

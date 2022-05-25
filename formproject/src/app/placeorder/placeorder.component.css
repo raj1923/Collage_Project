@@ -1,0 +1,106 @@
+input[type=button] {
+    padding: 4px 18px;
+    height: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #090d0e;
+    text-shadow: 0 1px #e3f1f1;
+    background:rgb(141, 190, 188);
+    border: 2px solid;
+    border-color: #060707 #020202 #0a0a0a;
+    border-radius: 20px;
+    outline: 20px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing:content-box;
+    text-align: center;
+    margin:5px;
+    
+    
+   
+    -webkit-box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.15);
+  }
+
+  .tab p
+ {
+     color: rgb(7, 7, 7);
+     padding: 0 18px;
+    height: 29px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+   
+ }
+ #a
+ {
+     background-image: url("../../assets/images/imgbasket.jpg");
+     font-size:xx-large;
+     font-style:oblique;
+     font-family: 'Times New Roman', Times, serif;  
+     font-weight: lighter;
+     background-repeat:repeat-x;
+     color: black;
+  
+ }
+ .nav
+ {background-color: rgb(86, 194, 194);
+  color: rgb(13, 17, 20);
+  height:38px;
+  
+ }
+ 
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+  
+   }
+   
+   li {
+     float: left;
+     border-right:1px solid #bbb;
+   }
+   
+   li:last-child {
+     border-right: none;
+   }
+   
+   li a {
+     display: block;
+     color: rgb(8, 6, 6);
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+   }
+   
+   li input[type=button]:hover:not(.active) {
+    background-color: rgb(200, 233, 243);
+   }
+   .nav button
+   {
+     float:right;
+   }
+
+   #main
+   {
+     width:"300px";
+   }
+.card input[type=text] 
+{
+  
+  margin-left: 10px;
+}
+#f1
+{
+  margin-left: 1px;
+}
+
+
+
+
+    
+  

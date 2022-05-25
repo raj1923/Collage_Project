@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>           
+<html>                      
+ <head>                      
+  <title>Page Title</title>               
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>            
+ </head>                 
+ <body>                                                                           
+<div class="jumbotron"id="a">
+ <div class="container-sm-flude">
+     
+ <h1 align="center" ><strong>SUPER MARKET</strong></h1>
+ 
+ </div>
+</div>
+
+<div class="row">
+
+    <div class="col-md-12">
+        <div sm-2 class="card">
+            <p  class="card header"style="width:80%; padding: top 20px;">Invoice : {{todaydate | date:'short'}} </p>
+            
+            <div class="row" style="display: flex;justify-content: space-around;">
+                 <div class="col-md-5">
+            <h5  class="card header">From:</h5>
+                <p><strong>E-Commerce Shooping</strong>
+                    </p>
+                    <p> No:12,OMR Road</p>
+                    <p>RajaNagar,534672</p>
+                    <p>Email:ecommerce@gmail.com</p>
+                    <p>Phone:8881289769</p>
+                     </div>
+                <div class="col-md-5">
+                   
+                        <h5 class="card header">To Address</h5>
+                        
+                        <div *ngFor="let user of orderdetail">
+                        <strong>Name:</strong> {{user.fullname}}<br>
+                       <strong>email: </strong>{{user.email}}<br>
+                        <strong>State: </strong> {{user.sta}}<br>
+                            <strong>District:</strong> {{user.district}}<br>
+                            <strong>Village: </strong>{{user.village}}<br>
+                              <strong>Mandal:</strong> {{user.mandal}}<br>
+                            <strong>Phone:</strong>{{user.phone}}<br> 
+                              <strong>Pincode:</strong>{{user.pincode}}
+                        
+                </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="row">
+    <div class=" billing col-md-8">
+
+<h5 class="bill">Billing Amount </h5>
+<table class="tbill">
+    <thead>
+        <th style="width:10%">Name</th>
+        <th style="width:10%" >Rate</th>
+      
+     
+    </thead>
+    <tbody>
+    <tr *ngFor="let amt of amount">
+        <td>{{amt.Name}}</td>
+        <td>{{amt.rate}}</td>
+      
+        </tr>
+        <hr>
+    </tbody>
+   
+    <tfoot>
+        <tr>
+          <th>Total</th>
+         <td><strong>{{total}}</strong></td>
+          
+        </tr>
+      </tfoot>
+</table>
+</div>
+</div>
+
+
+<div class="row">
+    <div class=" ordbut col-sm-6">
+        
+    <button type="submit"  class="btn btn-success"    routerLink="/orderconform">Order Confirm</button>
+    </div>
+   
+</div>
+
+
+

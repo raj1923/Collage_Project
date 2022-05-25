@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="container">
+            <div class="row">
+                <h1 style="text-align: center;">Thank You</h1>
+
+                    <div>
+                        <app-conform style="display: none;"  id="print-section"></app-conform>
+                    </div>
+
+                    <div class=" col-md-4">
+
+                     <button type="submit" style="padding-right:10px"  class="btn btn-success"  routerLink="/home">Back to Home</button>
+                     </div>
+
+                     <div class=" f2 col-md-4">
+                        <button type="print"  class="btn btn-success"(click)="remove()" printTitle="Super Mart" printSectionId="print-section" ngxPrint>Print Invoice</button>
+                        </div>
+                     <div class=" f1 col-md-4">
+
+                     <button type="submit" class="btn btn-success"  routerLink=''>Logout</button> 
+                    </div>
+                  
+            </div>
+
+    </div>
+
+
+</body>
+</html>

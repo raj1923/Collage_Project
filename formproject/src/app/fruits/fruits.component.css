@@ -1,0 +1,57 @@
+input[type=button] {
+  padding: 4px 18px;
+  height: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  color: #090d0e;
+  text-shadow: 0 1px #e3f1f1;
+  background:rgb(141, 190, 188);
+  border: 2px solid;
+  border-color: #060707 #020202 #0a0a0a;
+  border-radius: 20px;
+  float: left;
+  box-sizing:content-box;
+  text-align: center;
+  
+  
+ 
+}
+
+.tab p
+{
+   color: rgb(7, 7, 7);
+   padding: 0 18px;
+  height: 29px;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+
+ 
+}
+#a
+{
+   background-image: url("../../assets/images/imgbasket.jpg");
+   font-size:xx-large;
+   font-style:oblique;
+   font-family: 'Times New Roman', Times, serif;  
+   font-weight: lighter;
+   background-repeat:repeat-x;
+   color: black;
+
+}
+
+
+ 
+ 
+
+ 
+
+
+
+
+
+
+
+
+ 

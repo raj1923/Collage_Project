@@ -1,0 +1,157 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 3,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "createaccount": [
+    {
+      "name": "dwqw",
+      "password": "1234",
+      "repassword": "1234",
+      "id": 1
+    },
+    {
+      "name": "dwqw",
+      "password": "1234",
+      "repassword": "1234",
+      "id": 2
+    },
+    {
+      "name": "dwqw",
+      "password": "1234",
+      "repassword": "1234",
+      "id": 3
+    },
+    {
+      "name": "dwqw",
+      "password": "1234",
+      "repassword": "1234",
+      "id": 4
+    },
+    {
+      "name": "dwqw",
+      "password": "1234",
+      "repassword": "1234",
+      "id": 5
+    },
+    {
+      "name": "rajesh",
+      "password": "12345",
+      "repassword": "12345",
+      "id": 6
+    },
+    {
+      "name": "",
+      "password": "",
+      "repassword": "",
+      "id": 7
+    },
+    {
+      "name": "",
+      "password": "",
+      "repassword": "",
+      "id": 8
+    },
+    {
+      "name": null,
+      "password": null,
+      "repassword": null,
+      "id": 9
+    },
+    {
+      "name": "",
+      "password": "",
+      "repassword": "",
+      "id": 10
+    },
+    {
+      "name": "d4",
+      "password": "123",
+      "repassword": "123",
+      "id": 11
+    },
+    {
+      "name": "rah",
+      "password": "123",
+      "repassword": "123",
+      "id": 12
+    },
+    {
+      "name": "raj",
+      "password": "123",
+      "repassword": "123",
+      "id": 13
+    },
+    {
+      "name": "rama",
+      "password": "1234",
+      "repassword": "1234",
+      "id": 14
+    },
+    {
+      "name": "dgg",
+      "password": "122",
+      "repassword": "123",
+      "id": 15
+    },
+    {
+      "name": "",
+      "password": "",
+      "repassword": "",
+      "id": 16
+    },
+    {
+      "name": "",
+      "password": "",
+      "repassword": "",
+      "id": 17
+    },
+    {
+      "name": "",
+      "password": "",
+      "repassword": "",
+      "id": 18
+    },
+    {
+      "name": "dwqw",
+      "password": "",
+      "repassword": "",
+      "id": 19
+    },
+    {
+      "name": "dwqw",
+      "password": "123",
+      "repassword": "123",
+      "id": 20
+    },
+    {
+      "name": "rajesh",
+      "password": "789",
+      "repassword": "789",
+      "id": 21
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

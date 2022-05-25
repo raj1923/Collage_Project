@@ -1,0 +1,44 @@
+#a
+ {
+     background-image: url("../../assets/images/imgbasket.jpg");
+     font-size:xx-large;
+     font-style:oblique;
+     font-family: 'Times New Roman', Times, serif;  
+     font-weight: lighter;
+     background-repeat:repeat-x;
+     color: black;
+  
+ }
+ .nav
+ {background-color: rgb(86, 194, 194);
+  color: rgb(13, 17, 20); 
+ }
+ h5
+ {
+     background-color: turquoise;
+ }
+ .card
+ {
+     font-family: 'Times New Roman', Times, serif;
+     font-size:x-large;
+ }
+ .billing
+ {
+     width:96%;
+     padding-left: 70px;
+ }
+ .ordbut
+ {
+    padding-left:70px;
+ }
+
+ .print
+ {
+    padding-right:70px;
+    
+ }
+ 
+ 
+
+ 
+ 
